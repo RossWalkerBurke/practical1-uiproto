@@ -1,32 +1,123 @@
+/* desktop */
 body{
     font-family: 'MinecrafterAltRegular';
-    background-color: lightgreen;
+    background-color: #491f06;
 }
-li{
-    display: inline;
-    color: black;
-    font-size: 20px;
-    padding: 5px;
-    margin: 0 2px 0 0;
-
+img{
+    max-width: 100%;
 }
 
-a{
-    text-decoration: none;
+header {
+background-color: lightblue;
+text-align: center;
+padding: 20px;
+}
+/*page links*/
+nav {
+ overflow: hidden;
+background-color: green;
+}
+nav a {
+display: block;
+color: #491f06;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.column {
+padding: 10px;
+margin: 5px;
+background-color: lightgray;
+}
+.column.left {
+float:left;
+width: 47%;
+}
+.column.right {
+ float: left;
+ width: 47%;
+}
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+footer {
+background-color: #313131;
+text-align: center;
+padding: 10px;
+}
+/* <!--tablet--> */
+@media only screen  and (max-width: 1000px){
+    body{
+        background-color: lightgreen;
+        font-family: 'MinecrafterAltRegular';
+    }
+    header {
+    background-color: lightblue;
     text-align: center;
-}
-#main-container{
-
+    padding: 20px;
+    }
+    nav {
+    overflow: hidden;
+    background-color: green;
+    }
+    img{
+        max-width: 100%;
+    }
     
-    outline:2px black;
+    p{
+    color: black;
+    font-size: 1em;
+    }
+    .column.left {
+    float: left;
+     width: 45%;
+    }
+    .column.right {
+    float: left;
+     width: 45%;
+    }
+    footer {
+    background-color: #313131;
+    text-align: center;
+    padding: 10px;
+    }
 }
-#left-collum{
-
-
-    outline:2px black;
-}
-#right-collum{
-
-
-    outline:2px black;
+/* <!-- phone --> */
+@media only screen  and (max-width: 650px){
+    body{
+        background-color: gray;
+        font-family: 'MinecrafterAltRegular';
+    }
+    header {
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px;
+    }
+    nav {
+    overflow: hidden;
+    background-color: green;
+    }
+    img{
+        max-width: 100%;
+    }
+    p{
+    color: black;
+    font-size: 1em;
+    }
+    .column.left {
+    
+     width: 95%;
+    }
+    .column.right {
+ 
+     width: 95%;
+    }
+    footer {
+    background-color: #313131;
+    text-align: center;
+    padding: 10px;
+    }
 }
